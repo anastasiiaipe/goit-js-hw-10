@@ -14,6 +14,34 @@
   <body>
     <section>
       <a class="go-home" href="./index.html">Go to home</a>
+
+      <form class="form">
+        <label>
+          Delay (ms)
+          <input class="delay-input" type="number" name="delay" required />
+        </label>
+
+        <fieldset class="fieldset">
+          <legend>State</legend>
+          <label>
+            <input
+              class="radio-input"
+              type="radio"
+              name="state"
+              value="fulfilled"
+              required
+            />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button class="form-btn" type="submit">Create notification</button>
+      </form>
     </section>
+    <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
