@@ -47,7 +47,7 @@ function addLeadingZero(value) {
 function startTimer() {
   startBtn.disabled = true;
 
-  let timerTime = 0;
+  const timerTime = 0;
 
   const intervalId = setInterval(() => {
     timerTime = userSelectedDate - Date.now();

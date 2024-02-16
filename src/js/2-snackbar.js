@@ -9,11 +9,11 @@ form.addEventListener('submit', createPromise);
 function createPromise(event) {
   event.preventDefault();
 
-  const delay = form.delay.value;
-  const checkbox = form.state.value;
+  const delay = Number(form.delay.value);
+  const selectedState = form.state.value;
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (checkbox === 'fulfilled') {
+      if (selectedState === 'fulfilled') {
         resolve(delay);
       } else {
         reject(delay);
